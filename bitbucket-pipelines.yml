@@ -1,4 +1,4 @@
-image: python:3.11
+﻿image: python:3.11
 
 pipelines:
   default:
@@ -16,3 +16,4 @@ pipelines:
         name: Run Tests
         script:
           - pytest
+
