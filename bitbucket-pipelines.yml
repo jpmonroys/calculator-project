@@ -1,0 +1,13 @@
+image: python:3.11
+
+pipelines:
+  default:
+    - step:
+        name: Install Dependencies
+        script:
+          - pip install -r requirements.txt
+
+    - step:
+        name: Run Tests
+        script:
+          - pytestpython
