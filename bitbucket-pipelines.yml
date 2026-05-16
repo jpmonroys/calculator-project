@@ -10,4 +10,4 @@ pipelines:
     - step:
         name: Run Tests
         script:
-          - pytestpython
+          - pytest
