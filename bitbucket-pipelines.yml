@@ -2,7 +2,6 @@ image: python:3.11
 
 pipelines:
   default:
-
     - step:
         name: Install Dependencies
         script:
@@ -16,5 +15,4 @@ pipelines:
     - step:
         name: Run Tests
         script:
-          - pytestl -r requirements.txt
           - pytest
