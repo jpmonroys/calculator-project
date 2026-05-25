@@ -8,3 +8,12 @@ def test_subtract():
 
 def test_multiply():
     assert multiply(3, 4) == 12
+    
+def test_divide():
+    from calculadora import divide
+    assert divide(10, 2) == 5
+    try:
+        divide(10, 0)
+        assert False, "Expected ValueError for division by zero"
+    except ValueError:
+        pass
