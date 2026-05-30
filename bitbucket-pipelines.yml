@@ -1,11 +1,16 @@
-﻿image: python:3.11
+image: python:3.11
 
 pipelines:
   default:
     - step:
         name: Install Dependencies
+        name: Install Dependencies
         script:
           - pip install -r requirements.txt
+
+    - step:
+        name: Run Tests
+        script:
 
     - step:
         name: Code Quality
@@ -16,4 +21,3 @@ pipelines:
         name: Run Tests
         script:
           - pytest
-
