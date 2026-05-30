@@ -4,7 +4,6 @@ pipelines:
   default:
     - step:
         name: Install Dependencies
-        name: Install Dependencies
         script:
           - pip install -r requirements.txt
 
@@ -15,6 +14,7 @@ pipelines:
     - step:
         name: Code Quality
         script:
+          - pip install -r flake8
           - flake8 .
 
     - step:
