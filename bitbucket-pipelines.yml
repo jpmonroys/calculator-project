@@ -14,7 +14,6 @@ pipelines:
     - step:
         name: Code Quality
         script:
-          - pip install -r flake8
           - flake8 .
 
     - step:
